@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="My suite" thread-count="4">
+<suite name="My suite" thread-count="5">
   <suite-files>
     <suite-file path="./RegressionSuite.xml" />
     <suite-file path="./APISuite.xml" />
