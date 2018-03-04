@@ -11,7 +11,7 @@ public class APITestSuiteBase extends TestBase {
 				public void checkSuiteSkip() throws Exception
 				{
 					
-					
+					System.out.println("Before API Suite");
 					if(!TestUtil.isSuiteRunnable(suiteXls, "APISuite")){
 						throw new SkipException("Runmode of API Suite set to no. So Skipping all tests in API Suite");
 					}

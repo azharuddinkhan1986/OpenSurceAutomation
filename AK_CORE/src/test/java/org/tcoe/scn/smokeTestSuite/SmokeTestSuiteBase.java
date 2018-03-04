@@ -11,7 +11,7 @@ public class SmokeTestSuiteBase extends TestBase {
 				public void checkSuiteSkip() throws Exception
 				{
 					
-					
+					System.out.println("Before Smoke");
 					if(!TestUtil.isSuiteRunnable(suiteXls, "SmokeSuite")){
 						throw new SkipException("Runmode of Smoke Suite set to no. So Skipping all tests in Smoke Suite");
 					}

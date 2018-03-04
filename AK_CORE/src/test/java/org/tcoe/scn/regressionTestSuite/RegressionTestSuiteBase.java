@@ -12,7 +12,7 @@ public class RegressionTestSuiteBase extends TestBase {
 			public void checkSuiteSkip() throws Exception
 			{
 				
-				
+				System.out.println("Before Regression Suite");
 				if(!TestUtil.isSuiteRunnable(suiteXls, "RegressionSuite")){
 					throw new SkipException("Runmode of Regression Suite set to no. So Skipping all tests in Regression Suite");
 				}
