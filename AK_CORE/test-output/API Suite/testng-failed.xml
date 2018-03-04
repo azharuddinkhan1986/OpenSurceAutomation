@@ -5,7 +5,7 @@
     <classes>
       <class name="org.tcoe.scn.apiTestSuite.TestCase1">
         <methods>
-          <include name="idmsHomeLoginTest"/>
+          <include name="idmsHomeLoginTest" invocation-numbers="0"/>
           <include name="checkSuiteSkip"/>
         </methods>
       </class> <!-- org.tcoe.scn.apiTestSuite.TestCase1 -->

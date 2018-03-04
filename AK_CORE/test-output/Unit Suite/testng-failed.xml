@@ -5,7 +5,7 @@
     <classes>
       <class name="org.tcoe.scn.unitTestSuite.TestCase1">
         <methods>
-          <include name="idmsHomeLoginTest" invocation-numbers="0"/>
+          <include name="idmsHomeLoginTest"/>
           <include name="checkSuiteSkip"/>
         </methods>
       </class> <!-- org.tcoe.scn.unitTestSuite.TestCase1 -->

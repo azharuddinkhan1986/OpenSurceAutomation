@@ -275,7 +275,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression_Suite">
-              <span class="suite-name border-passed">Regression Suite</span>
+              <span class="suite-name border-skipped">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -328,21 +328,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
-                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods skipped suite-Regression_Suite"> (hide)</a> <!-- hide-methods skipped suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods skipped suite-Regression_Suite"> (show)</a> <!-- show-methods skipped suite-Regression_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Regression_Suite">
+                    <div class="method-list-content skipped suite-Regression_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression_Suite" title="org.tcoe.scn.regressionTestSuite.TestCase1" hash-for-method="idmsHomeLoginTest(tinamaliakal@gmail.com)">idmsHomeLoginTest(tinamaliakal@gmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Regression_Suite -->
+                    </div> <!-- method-list-content skipped suite-Regression_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -368,10 +368,6 @@
                   </a> <!-- idmsHomeLoginTest(tinamaliakal@gmail.com) -->
                   <span class="method-name">idmsHomeLoginTest</span>
                   <span class="parameters">(tinamaliakal@gmail.com)</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode of Unit Suite set to no. So Skipping all tests in Unit Suite
-	at org.tcoe.scn.unitTestSuite.UnitTestSuiteBase.checkSuiteSkip(UnitTestSuiteBase.java:15)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -390,6 +386,10 @@
                   </a> <!-- idmsHomeLoginTest(tinamaliakal@gmail.com) -->
                   <span class="method-name">idmsHomeLoginTest</span>
                   <span class="parameters">(tinamaliakal@gmail.com)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode of API Suite set to no. So Skipping all tests in API Suite
+	at org.tcoe.scn.apiTestSuite.APITestSuiteBase.checkSuiteSkip(APITestSuiteBase.java:16)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -408,19 +408,15 @@
                   </a> <!-- idmsHomeLoginTest(tinamaliakal@gmail.com) -->
                   <span class="method-name">idmsHomeLoginTest</span>
                   <span class="parameters">(tinamaliakal@gmail.com)</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode of Smoke Suite set to no. So Skipping all tests in Smoke Suite
-	at org.tcoe.scn.smokeTestSuite.SmokeTestSuiteBase.checkSuiteSkip(SmokeTestSuiteBase.java:16)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Smoke_Suite-class-skipped -->
         </div> <!-- panel Smoke_Suite -->
         <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
-          <div class="suite-Regression_Suite-class-passed">
+          <div class="suite-Regression_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">org.tcoe.scn.regressionTestSuite.TestCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -430,10 +426,14 @@
                   </a> <!-- idmsHomeLoginTest(tinamaliakal@gmail.com) -->
                   <span class="method-name">idmsHomeLoginTest</span>
                   <span class="parameters">(tinamaliakal@gmail.com)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode of Regression Suite set to no. So Skipping all tests in Regression Suite
+	at org.tcoe.scn.regressionTestSuite.RegressionTestSuiteBase.checkSuiteSkip(RegressionTestSuiteBase.java:17)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-passed -->
+          </div> <!-- suite-Regression_Suite-class-skipped -->
         </div> <!-- panel Regression_Suite -->
         <div panel-name="test-xml-My_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -443,7 +443,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My suite&quot;&gt;
   &lt;suite-files&gt;
     &lt;suite-file path=&quot;./RegressionSuite.xml&quot;/&gt;
     &lt;suite-file path=&quot;./APISuite.xml&quot;/&gt;
@@ -747,12 +747,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'idmsHomeLoginTest')
 data.setCell(0, 2, 'org.tcoe.scn.regressionTestSuite.TestCase1')
-data.setCell(0, 3, 8468);
+data.setCell(0, 3, 0);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -848,7 +848,7 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">idmsHomeLoginTest(tinamaliakal@gmail.com)</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">18 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -865,7 +865,7 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">idmsHomeLoginTest(tinamaliakal@gmail.com)</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -882,7 +882,7 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">idmsHomeLoginTest(tinamaliakal@gmail.com)</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -897,22 +897,10 @@ return data;
                 <span class="method-name">checkSuiteSkip</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">checkTestSkip</span>
-                <span class="method-start">36 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">idmsHomeLoginTest(tinamaliakal@gmail.com)</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">61 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">reportDataSetResult</span>
-                <span class="method-start">8527 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">reportTestResult</span>
-                <span class="method-start">9848 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

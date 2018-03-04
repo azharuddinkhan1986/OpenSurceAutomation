@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
   <test name="TestCase1(failed)">
     <classes>
-      <class name="org.tcoe.scn.smokeTestSuite.TestCase1">
+      <class name="org.tcoe.scn.regressionTestSuite.TestCase1">
         <methods>
           <include name="checkSuiteSkip"/>
           <include name="idmsHomeLoginTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- org.tcoe.scn.smokeTestSuite.TestCase1 -->
+      </class> <!-- org.tcoe.scn.regressionTestSuite.TestCase1 -->
     </classes>
   </test> <!-- TestCase1(failed) -->
-</suite> <!-- Failed suite [Smoke Suite] -->
+</suite> <!-- Failed suite [Regression Suite] -->
