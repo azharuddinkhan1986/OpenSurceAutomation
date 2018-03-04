@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [B Suite (0)]">
+  <test name="01_AutoUpload(failed)">
+    <classes>
+      <class name="org.tcoe.scn.regressionTestSuite.TestCase1">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="idmsHomeLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.tcoe.scn.regressionTestSuite.TestCase1 -->
+    </classes>
+  </test> <!-- 01_AutoUpload(failed) -->
+</suite> <!-- Failed suite [B Suite (0)] -->
