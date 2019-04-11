@@ -148,7 +148,9 @@ public class TestBase {
 			}
 			else if(browser.equals("Chrome")){
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-				driver=new ChromeDriver();
+				ChromeOptions options = new ChromeOptions();
+			    options.setExperimentalOption("useAutomationExtension", false);
+				driver=new ChromeDriver(options);
 				act=new Actions(driver);
 				explicitWait=new WebDriverWait(driver, 120);
 				driver.manage().window().maximize();

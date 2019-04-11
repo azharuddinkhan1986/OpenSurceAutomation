@@ -686,7 +686,10 @@ public class CommonUtility extends TestBase{
 			 Thread.sleep(3000);
 			 return path;
 		}
-		
+		public static void captureScreenShotOnPass() {
+			String  screenshotName=addScreenshot();
+			test.log(LogStatus.PASS, test.addScreenCapture(screenshotName));
+		}
 }
 
 

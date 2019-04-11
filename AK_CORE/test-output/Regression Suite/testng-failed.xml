@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
-  <test name="TestCase1(failed)">
+<suite name="Failed suite [Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestCase1(failed)">
     <classes>
       <class name="org.tcoe.scn.regressionTestSuite.TestCase1">
         <methods>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
           <include name="checkSuiteSkip"/>
-          <include name="idmsHomeLoginTest" invocation-numbers="0"/>
+          <include name="idmsHomeLoginTest"/>
         </methods>
       </class> <!-- org.tcoe.scn.regressionTestSuite.TestCase1 -->
     </classes>
